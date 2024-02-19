@@ -1,0 +1,10 @@
+<h1 class="text-4xl font-bold">This is a Large Heading</h1>
+<h2 class="text-3xl font-semibold">This is a Medium Heading</h2>
+<h3 class="text-2xl font-medium">This is a Normal Heading</h3>
+<h4 class="text-xl font-normal">This is a Small Heading</h4>
+<h5 class="text-lg font-light">This is an Extra Small Heading</h5>
+
+
+
+
+

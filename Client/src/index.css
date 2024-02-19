@@ -1,0 +1,101 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgb(41, 45, 50);
+}
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7e7d7d; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+  border: 3px solid #f0f0f0; /* Border color between thumb and track */
+}
+.imgp {
+  height: 300px;
+  width: 300px;
+}
+.seric {
+  border: 1px rgb(250, 0, 96) solid;
+}
+.bgg {
+  background-color: rgb(250, 0, 96);
+}
+.texty {
+  color: #fa0060;
+}
+::selection{
+  background-color: #fa0060;
+  color: white;
+}
+.active{
+  color: #fa0060;
+  font-weight: 600;
+
+}
+.imgp img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  /* background-color: beige; */
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  min-width: 96px;
+  height: 42px;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 30px;
+  border: 1px solid #8f9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+.button:hover {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+.button:active {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.button:focus {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.red {
+  border: 2px solid red;
+}
+@media (max-width: 425px) {
+  .imgp {
+    height: 80%;
+    width: 100%;
+  }
+  .pro {
+    width: 300px;
+    height: 300px;
+  }
+}
