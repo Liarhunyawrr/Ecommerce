@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-let port = 4000;
+const PORT = process.env.PORT || 4000;
 const bodyParser = require("body-parser");
 const core = require("cors");
 const postmodel = require("./Schema/Post");
@@ -101,6 +102,6 @@ app.post("/cart/:userid", async (req, res) => {
   }
 });
 
-app.listen(port, (req, res) => {
-  console.log(`app is listen on port${port}`);
+app.listen(PORT, (req, res) => {
+  console.log(`app is listen on port${PORT}`);
 });

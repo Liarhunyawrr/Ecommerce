@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
-
-mongoose.connect(
-  "mongodb+srv://LiarLio:7560294kpkp@cluster0.v8vkaxv.mongodb.net/?retryWrites=true&w=majority"
-);
+require("dotenv").config();
+mongoose.connect(process.env.MONGODB_URL);
 const postdets = mongoose.Schema({
   id: Number,
   title: String,
