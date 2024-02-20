@@ -25,10 +25,10 @@ app.get("/product/:id", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get("/create", async (req, res) => {
-  const result = await postmodel.insertMany(api);
-  res.send(result);
-});
+// app.get("/create", async (req, res) => {
+//   const result = await postmodel.insertMany(api);
+//   res.send(result);
+// });
 // app.get("/delall",async (req,res)=>{
 //   const result = await postmodel.deleteMany({});
 //     res.send(result);
