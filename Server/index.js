@@ -6,7 +6,6 @@ const core = require("cors");
 const postmodel = require("./Schema/Post");
 const usermodel = require("./Schema/User");
 let api = require("./Data.json");
-// console.log(api);
 app.use(express.json());
 app.use(core());
 app.use(bodyParser.json());
@@ -26,10 +25,10 @@ app.get("/product/:id", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-// app.get("/create", async (req,res)=>{
+// app.get("/create", async (req, res) => {
 //   const result = await postmodel.insertMany(api);
-//     res.send(result);
-// })
+//   res.send(result);
+// });
 // app.get("/delall",async (req,res)=>{
 //   const result = await postmodel.deleteMany({});
 //     res.send(result);
@@ -49,7 +48,7 @@ app.post("/user", async (req, res) => {
   }
 });
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.json("hello world");
 });
 app.get("/loginuser/:email", async (req, res) => {
   let email = req.params.email;
